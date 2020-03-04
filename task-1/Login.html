@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS.css">
+    <link href="login.js">
+    <title>Login Form</title>
+</head>
+<body >
+    
+    <form class="box" action="successful.html" method="post">
+        <h1>Login</h1>
+        <input type="text" name="skp" placeholder="Username">
+        <input type="password" name="pass" placeholder="Password">
+        <input type="button" onclick="check(this.form)" value="Login"/>
+    </form>
+
+    <script language="javascript">
+        function check(form)/*function to check userid & password*/
+        {
+         /*the following code checkes whether the entered userid and password are matching*/
+         if(form.skp.value == "admin" && form.pass.value == "pass")
+          {
+            window.open('Demo.html')/*opens the target page while Id & password matches*/
+          }
+         else
+         {
+           alert("Error Password or Username")/*displays error message*/
+          }
+        }
+        </script>
+
+    
+</body>
+</html>
